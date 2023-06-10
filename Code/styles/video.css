@@ -1,0 +1,134 @@
+  .thumbnail {
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+  }
+ 
+  .video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .channel-picture{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .video-tooltip{
+    display: flex;
+    position: absolute;
+    font-family: Roboto, Arial;
+    background-color: white;
+    box-shadow: 1px 1px 11px rgba(0, 0, 0, .15);
+    width: 230px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap ;
+    z-index: 300;
+  }
+  .video-tooltip .profile-picture{
+    height: 55px;
+    width: 55px;
+    margin-right: 15px;
+  }
+  .channel-name{
+    font-weight: bold;
+    padding-top: 7px;
+    font-size: 18px;
+  }
+  .channel-subscribers{
+    color:rgb(96, 96, 96);
+    font-size: 16px;
+  }
+  .channel-picture:hover .video-tooltip{
+    opacity: 1;
+  }
+
+  .profile-picture {
+    width: 36px;
+    border-radius: 50px;
+  }
+
+  .thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 12px;
+
+    color: rgb(96, 96, 96);
+  }
+
+  .video-author {
+    margin-bottom: 4px;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+
+  @media (max-width: 750px) {
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+    .video-title{
+      font-size: 14px;
+    }
+  }
+  @media (min-width: 751px) and (max-width: 999px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .video-title{
+      font-size: 14px;
+    }
+  }
+  @media (min-width: 1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .video-title{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  @media (min-width: 1200.1px){
+    main{
+      flex: 1;
+    }
+  }
+  .video-time{
+    font-family: Roboto,Arial;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .bars{
+            display: flex;
+        }
+
+        .image-bar{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(44, 44, 44);
+            position: fixed;
+            width: 100px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            padding-top: 20px;
+            align-items: center;
+        }
+
+        img{
+            height: 60px;
+            width: 60px;
+            object-fit:cover;
+            border-radius: 30px;
+            margin-bottom: 15px;
+        }
+
+        .info-bar{
+          background-color: rgb(71, 71, 71);
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 100px;
+          width: 250px;
+        }
+
+        .tag{
+          display: flex;
+          padding-left: 20px;
+        }
+
+        p{
+          color: rgb(185, 185, 185);
+          font-family: Arial;
+          font-size: 17px;
+          margin: 0;
+        }
+
+        .info{
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+        }
+
+        .add{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        .plus{
+          font-size: 30px;
+        }
+
+        .hash{
+          margin-right: 10px;
+        }
+
+        .text{
+          margin-bottom: 20px;
+        }
+    </style>
+     </head>
+  <body>
+    <div class="bars">
+      <div class="image-bar">
+        <img src="../lesson7 Images and Text boxes/Images/sundae1.jpg" />
+        <img src="../lesson7 Images and Text boxes/Images/sundae3.jpg" />
+        <img src="../lesson7 Images and Text boxes/Images/sundae2.webp" />
+      </div>
+
+      <div class="info-bar">
+        <div class="add">
+            <p class="info">INFO</p>
+            <p class="plus">+</p>
+        </div>
+
+        <div class="tag">
+          <p class="hash">#</p>
+          <p class="text">new-videos</p>
+        </div>
+
+        <div class="tag">
+          <p class="hash">#</p>
+          <p class="text">updates</p>
+        </div>
+
+        <div class="tag">
+          <p class="hash">#</p>
+          <p class="text">faq</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .friend {
+        width: 190px;
+        height: 180px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      p {
+        font-family: Arial;
+        margin-left: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .name {
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      .friends {
+        color: rgb(114, 114, 114);
+        font-size: 15px;
+        margin-left: 5px;
+        display: inline-block;
+      }
+      .add {
+        background-color: rgb(104, 178, 253);
+        color: white;
+        border: none;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      .profile {
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.425);
+        width: 190px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+      .mutuals-img {
+        height: 25px;
+        width: 25px;
+        border-radius: 13px;
+        display: inline-block;
+      }
+      .mutual-number {
+        display: inline-block;
+      }
+      .mutual-imgdiv {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-right: 0;
+      }
+      .mutuals {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        /* align-items: center; */
+      }
+
+      .icecream-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icecream-grid">
+      <div class="profile">
+        <div>
+          <img
+            class="friend"
+            src="../lesson7 Images and Text boxes/Images/sundae1.jpg"
+          />
+        </div>
+
+        <div>
+          <p class="name">Oliver</p>
+        </div>
+
+        <div class="mutuals">
+          <div class="mutual-imgdiv">
+            <img
+              class="mutuals-img"
+              src="../lesson7 Images and Text boxes/Images/cake1.jpg"
+            />
+          </div>
+          <div class="mutual-number">
+            <p class="friends">2 mutual friends</p>
+          </div>
+        </div>
+
+        <div>
+          <button class="add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div>
+          <img
+            class="friend"
+            src="../lesson7 Images and Text boxes/Images/sundae2.webp"
+          />
+        </div>
+
+        <div>
+          <p class="name">Mimi</p>
+        </div>
+
+        <div class="mutuals">
+          <div class="mutual-imgdiv">
+            <img
+              class="mutuals-img"
+              src="../lesson7 Images and Text boxes/Images/cake1.jpg"
+            />
+          </div>
+          <div class="mutual-number">
+            <p class="friends">3 mutual friends</p>
+          </div>
+        </div>
+
+        <div>
+          <button class="add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div>
+          <img
+            class="friend"
+            src="../lesson7 Images and Text boxes/Images/sundae3.jpg"
+          />
+        </div>
+
+        <div>
+          <p class="name">Rex</p>
+        </div>
+
+        <div class="mutuals">
+          <div class="mutual-imgdiv">
+            <img
+              class="mutuals-img"
+              src="../lesson7 Images and Text boxes/Images/cake1.jpg"
+            />
+          </div>
+          <div class="mutual-number">
+            <p class="friends">4 mutual friends</p>
+          </div>
+        </div>
+
+        <div>
+          <button class="add">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
